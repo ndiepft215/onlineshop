@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Giỏ hàng - Thu Thảo Shoes</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-container">
+            <div id="main-header" class="main-header">
+                <div id="logo-header" class="logo-header">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="search-header" class="search-header">
+                    <form action="" method="get">
+                        <div class="search-form">
+                            <input type="text" name="search" placeholder="Tìm kiếm sản phẩm" autocomplete="off">
+                            <button type="submit"><i class='bx bx-search-alt-2'></i>Tìm kiếm</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="cart-header" class="cart-header">
+                    <a href="/cart" class="cart-icon">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </div>
+            </div>
+            <div id="wide-nav" class="wide-nav">
+                <div class="nav-container flex-row">
+                    <div class="flex-col hide-for-medium flex-left">
+                        <div class="mega-menu-wrap">
+                            <div id="mega-menu-title" class="menu-title">
+                                <i class='bx bx-menu'></i>
+                                Danh mục sản phẩm
+                            </div>
+                            <ul class="category">
+                                <li class="category-item">
+                                    <a href="/category/1" class="category-item-link">Sản phẩm sale</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/2" class="category-item-link">Giày Nike</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/3" class="category-item-link">Giày Converse</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/4" class="category-item-link">Giày MLB</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/5" class="category-item-link">Giày Adidas</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/6" class="category-item-link">Giày Vans</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/7" class="category-item-link">Giày Puma</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/category/8" class="category-item-link">Giày Reebok</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="flex-col hide-for-medium flex-center">
+                        <ul class="nav header-nav">
+                            <li class="nav-item">
+                                <a href="/giay-nam" class="nav-link">giày nam</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/giay-nu" class="nav-link">giày nữ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/dep" class="nav-link">dép</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/ao-polo" class="nav-link">áo polo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/sale" class="nav-link">sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-col hide-for-medium flex-right" style="width: 400px;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div id="content" role="main" class="content-area">
+                <!-- <div class="cart-empty cart-info">
+                    <p class="cart-empty-text">Chưa có sản phẩm nào trong giỏ hàng</p>
+                    <p class="back-to-shop">
+                        <a class="btn-back" href="/index.html">Quay lại cửa hàng</a>
+                    </p>
+                </div> -->
+                <div class="cart-info cart-no-empty">
+                    <div class="cart-wrapper">
+                        <table class="shop_table cart-contents">
+                            <thead>
+                                <tr>
+                                    <th class="product-name" colspan="3">Sản phẩm</th>
+                                    <th class="product-cart-price">Giá</th>
+                                    <th class="product-quantity">Số lượng</th>
+                                    <th class="product-subtotal">Tạm tính</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cart-item">
+                                    <td class="product-remove">
+                                        <a href="/cart/remove/1" class="remove" aria-label="Xóa sản phẩm này" data-product_id="1" data-product_sku="1">
+                                            <i class='bx bx-trash'></i>
+                                        </a>
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <a href="/product/1">
+                                            <img width="300" height="300" src="/images/product2.jpg" alt="product">
+                                        </a>
+                                    </td>
+                                    <td class="product-name" data-title="Sản phẩm">
+                                        <a href="/product/1">Giày Nike Air Force 1 '07 LV8 ádiausdiuasasuiod</a>
+                                    </td>
+                                    <td class="product-price" data-title="Giá">
+                                        <span class="price">1.500.000đ</span>
+                                    </td>
+                                    <td class="product-quantity" data-title="Số lượng">
+                                        <div class="quantity">
+                                            <input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal" data-title="Tạm tính">
+                                        <span class="price">1.500.000đ</span>
+                                    </td>
+                                </tr>
+                                <tr class="cart-item">
+                                    <td class="product-remove">
+                                        <a href="/cart/remove/1" class="remove" aria-label="Xóa sản phẩm này" data-product_id="1" data-product_sku="1">
+                                            <i class='bx bx-trash'></i>
+                                        </a>
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <a href="/product/1">
+                                            <img width="300" height="300" src="/images/product1.jpg" alt="product">
+                                        </a>
+                                    </td>
+                                    <td class="product-name" data-title="Sản phẩm">
+                                        <a href="/product/1">Giày Nike Air Force 1 '07 LV8</a>
+                                    </td>
+                                    <td class="product-price" data-title="Giá">
+                                        <span class="price">1.500.000đ</span>
+                                    </td>
+                                    <td class="product-quantity" data-title="Số lượng">
+                                        <div class="quantity">
+                                            <input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal" data-title="Tạm tính">
+                                        <span class="price">1.500.000đ</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Tạo nút quay lại cửa hàng -->
+                                    <td colspan="6" class="actions">
+                                        <a href="/index.html" class="btn-continue-shopping">
+                                            <!-- icon back -->
+                                            <i class='bx bx-arrow-back'></i>
+                                            Tiếp tục xem sản phẩm
+                                        </a>
+                                        <!-- tạo nút cập nhật giỏ hàng -->
+                                        <button type="submit" class="btn-update-cart">
+                                            Cập nhật giỏ hàng
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart-payment">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer-wrapper">
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <div class="footer-title">
+                    <span>
+                        Liên hệ
+                    </span>
+                </div>
+                <ul class="social-contact">
+                    <li class="social-contact-item">
+                        <a href="">
+                            <i class='bx bxl-facebook' ></i>
+                        </a>
+                    </li>
+                    <li class="social-contact-item">
+                        <a href="">
+                            <i class='bx bxl-instagram-alt  ' ></i>
+                        </a>
+                    </li>
+                    <li class="social-contact-item">
+                        <a href="">
+                            <i class='bx bxl-tiktok' ></i>
+                        </a>
+                    </li>
+                </ul>
+                <strong class="phone">Điện thoại: 0981.095.391</strong>
+                <strong class="email">Email: abc@gmail.com</strong>
+                <strong class="address">Địa chỉ: 123 Ba La Nha, Phúc Thọ, Hà Nội</strong>
+            </div>
+            <div class="footer-section services">
+                <div class="footer-title">
+                    <span>
+                        dịch vụ
+                    </span>
+                </div>
+                <div class="services-list footer-section-content">
+                    <a href="">
+                        <p>Chính sách vận chuyển và giao nhận</p>
+                    </a>
+                    <a href="">
+                        <p>Chính sách đổi, trả và bảo hành</p>
+                    </a>
+                    <a href="">
+                        <p>Chính sách bảo mật</p>
+                    </a>
+                    <a href="">
+                        <p>Chính sách xử lý khiếu nại</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section support">
+                <div class="footer-title">
+                    <span>
+                        hỗ trợ
+                    </span>
+                </div>
+                <div class="footer-section-content support-list">
+                    <a href="">
+                        <p>Hướng dẫn đặt hàng</p>
+                    </a>
+                    <a href="">
+                        <p>Hình thức thanh toán</p>
+                    </a>
+                    <a href="">
+                        <p>Liên hệ</p>
+                    </a>
+                    <a href="">
+                        <p>Giới thiệu về Thu Thảo Shoes</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section fanpage">
+                <div class="footer-title">
+                    <span>
+                        fanpage
+                    </span>
+                </div>
+            </div>
+          </div>
+    </footer>
+    <div class="license">Bản quyền® 2023 Thu Thảo Shoes</div>
+    <button id="scroll-to-top-btn" class="hide">
+        <i class='bx bx-chevron-up'></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
+</body>
+</html>
